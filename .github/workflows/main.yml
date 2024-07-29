@@ -21,8 +21,10 @@ jobs:
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "chore: update metrics"
-          base: header
+          base: header, repositories
           plugin_isocalendar: no
           plugin_languages: yes
           plugin_stars: yes
           config_order: base.header, isocalendar, languages, stars
+          plugin_lines: yes
+          filename: metrics.classic.svg
